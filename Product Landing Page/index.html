@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Product Landing Page</title>
+  <style>
+  body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color:wheat;
+    color:black;
+  }
+  header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin-top: 5px;
+}
+.product-section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-section h2 {
+  color: #333;
+}
+.product-section ul {
+  list-style:none;
+  padding: 0;
+}
+.product-section li {
+  margin-bottom: 8px;
+}
+.pricing-option {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 15px;
+  box-shadow: 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+.pricing-option h3 {
+  color: brown;
+}
+
+.pricing-option p {
+  color: #666;
+}
+
+.pricing-option ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-option li {
+  margin-bottom: 8px;
+}
+.pricing-option a {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: brown;
+  color: goldenrod;
+  text-decoration: none;
+  border-radius: 12px;
+  margin-top: 6px;
+}
+form {
+  margin-top: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, textarea {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  box-sizing:content-box;
+}
+button {
+  background-color: blueviolet;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: black;
+}
+footer {
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+  background-color:brown;
+  color: greenyellow;
+}
+
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Eco Tech Solutions</h1>
+  <p>Your Ultimate Solution</p>
+</header>
+
+<section id="features" class="product-section">
+  <h2>Key Features</h2>
+  <ul>
+    <li>Feature 1: Lorem ipsum dolor sit amet</li>
+    <li>Feature 2: Consectetur adipiscing elit</li>
+    <li>Feature 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+  </ul>
+</section>
+
+<section id="pricing" class="product-section">
+  <h2>Pricing</h2>
+  <div class="pricing-option">
+    <h3>Basic Plan</h3>
+    <p>Starting at $19.99/month</p>
+    <ul>
+      <li>Feature 1</li>
+      <li>Feature 2</li>
+    </ul>
+    <a href="#">Get Started</a>
+  </div>
+  <div class="pricing-option">
+    <h3>Pro Plan</h3>
+    <p>Starting at $29.99/month</p>
+    <ul>
+      <li>Feature 1</li>
+      <li>Feature 2</li>
+      <li>Feature 3</li>
+    </ul>
+    <a href="#">Get Started</a>
+  </div>
+  <div class="pricing-option">
+    <h3>Premium Plan</h3>
+    <p>Starting at $49.99/month</p>
+    <ul>
+      <li>Feature 1</li>
+      <li>Feature 2</li>
+      <li>Feature 3</li>
+      <li>Feature 4</li>
+    </ul>
+    <a href="#">Get Started</a>
+  </div>
+</section>
+
+<section id="contact" class="product-section">
+  <h2>Contact Us</h2>
+  <form action="#" method="post">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2023 Eco Tech Solutions. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
